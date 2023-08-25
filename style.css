@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-direction: row;
+    margin: unset;
+}
+
+.leftside {
+    width: 37vw;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+
+}
