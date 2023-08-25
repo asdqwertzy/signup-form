@@ -4,10 +4,53 @@ body {
     margin: unset;
 }
 
+@font-face {
+    font-family: 'NorseBold';
+    src: url('Norse-Bold.otf') format('opentype');
+ }
+
+ .royalty {
+    color:white;
+    align-self: center;
+    position:relative;
+    opacity:0.8;
+    font-family:Arial;
+
+ }
+
 .leftside {
     width: 37vw;
     height: 100vh;
     background-image: url('https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=halie-west-25xggax4bSA-unsplash.jpg');
-    background-size: cover;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+
+.logobg {
+    background-color: rgba(0,0,0, 0.5);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:20px;
+    position:relative;
+    top:25%;
+    align-items: center;
+}
+
+.logo {
+    height: 160px;
+    width: auto;
+
+}
+
+.logotext {
+    font-family: 'NorseBold';
+    color: white;
+    font-size: 130px;
+    margin:unset;
 
 }
