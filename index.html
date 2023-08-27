@@ -29,44 +29,47 @@
 
         <div class="mid">
             <p>Let's do this!</p>
-            <form>
+            <form action="#" method="get"  onsubmit="validatePassword()">
                 <div class="left3inputs">
                     <div class="inputfield">
                         <label for="fname">FIRST NAME</label>
-                        <input type="text" id="fname">
+                        <input type="text" id="fname" required minlength="2" maxlength="20">
                     </div>
                     <div class="inputfield">
                         <label for="email">EMAIL</label>
-                        <input type="mail" id="email">
+                        <input type="mail" id="email" required>
                     </div>
                     <div class="inputfield">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password">
+                        <input type="password" id="password" required minlength="8">
+                        <span class="error-message">* Passwords do not match</span>
                     </div>
                 </div>
 
                 <div class="right3inputs">
                     <div class="inputfield">
                         <label for="lname">LAST NAME</label>
-                        <input type="text" id="lname">
+                        <input type="text" id="lname" required minlength="2" maxlength="20">
                     </div>
 
                     <div class="inputfield">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone">
+                        <input type="tel" id="phone" required pattern="^\d{10}$">
                     </div>
 
                     <div class="inputfield">
                         <label for="confirmpw">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirmpw">
+                        <input type="password" id="confirmpw" required minlength="8">
                     </div>
                 </div>
-            </form>
+
+
         </div>
 
         <div class="bottom">
             <div class="bottomshit">
-                <button>Create Account</button>
+                <button type="submit"">Create Account</button>
+                </form>
                 <p>Already have an account? <a href="#">Log in</a>
             </div>
         </div>

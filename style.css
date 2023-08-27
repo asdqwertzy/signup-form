@@ -160,3 +160,19 @@ a {
    text-decoration: unset;
    color:#596D48;
 }
+
+.pwerror {
+    border: 1px solid red;
+}
+
+.error-message {
+    color:red;
+    font-family: Verdana;
+    font-size: 14px;
+    display: none; 
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
