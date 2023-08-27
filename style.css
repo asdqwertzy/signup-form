@@ -2,42 +2,43 @@ body {
     display: flex;
     flex-direction: row;
     margin: unset;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @font-face {
     font-family: 'NorseBold';
     src: url('Norse-Bold.otf') format('opentype');
- }
+}
 
- .royalty {
-    color:white;
+.royalty {
+    color: white;
     align-self: center;
-    position:relative;
-    opacity:0.8;
-    font-family:Arial;
+    position: relative;
+    opacity: 0.8;
+    font-family: Arial;
 
- }
+}
 
 .leftside {
     width: 37vw;
     height: 100vh;
     background-image: url('https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=halie-west-25xggax4bSA-unsplash.jpg');
-    background-size:cover;
-    display:flex;
+    background-size: cover;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 
 }
 
 .logobg {
-    background-color: rgba(0,0,0, 0.5);
-    display:flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    padding:20px;
-    position:relative;
-    top:25%;
+    padding: 20px;
+    position: relative;
+    top: 25%;
     align-items: center;
 }
 
@@ -51,6 +52,111 @@ body {
     font-family: 'NorseBold';
     color: white;
     font-size: 130px;
-    margin:unset;
+    margin: unset;
+    overflow: hidden;
 
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 63vw;
+}
+
+.top {
+    background-color: rgb(248, 248, 248);
+    height: 33vh;
+    display: flex;
+    overflow: auto;
+
+}
+
+.top p {
+    font-weight: bold;
+    font-size: 26px;
+    margin: 100px 200px 30px 50px;
+    min-width: 40vw;
+
+
+}
+
+.mid {
+    height: 40vh;
+    box-shadow: 10px 8px 16px 0px rgba(0, 0, 0, 0.11);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.mid p {
+    font-weight: bold;
+    font-size: 26px;
+    margin-left: 50px;
+}
+
+.bottom {
+    background-color: rgb(248, 248, 248);
+    height: 26vh;
+    display:flex;
+    flex-direction: column;
+}
+
+input,
+label {
+    display: block;
+}
+
+label {
+    font-weight: 600;
+    font-size: 13px;
+    font-family: Verdana;
+    color: rgb(44, 44, 44);
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.inputfield {
+    margin: 0px 70px 40px 50px;
+
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    border-color: unset;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bottom p {
+    font-family:Helvetica;
+    font-weight:bold;
+}
+
+.bottomshit {
+    margin: 50px 0 40px 50px;
+}
+
+a {
+   text-decoration: unset;
+   color:#596D48;
 }
